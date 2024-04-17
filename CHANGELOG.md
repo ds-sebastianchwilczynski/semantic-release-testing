@@ -2,6 +2,13 @@
 
 
 
+## v0.1.1 (2024-04-17)
+
+### Fix
+
+* fix: dryrun ([`1398753`](https://github.com/ds-sebastianchwilczynski/semantic-release-testing/commit/13987532a1a8936bf80211f692a2474e8f95bf5c))
+
+
 ## v0.1.0 (2024-04-17)
 
 ### Feature
