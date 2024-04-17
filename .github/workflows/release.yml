@@ -1,6 +1,18 @@
 name: Semantic Release
 
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+    inputs:
+      releaseType:
+        description: "version update type"
+        required: true
+        type: string
+        default: "automatic"
+        options:
+          - "automatic"
+          - "major"
+          - "minor"
+          - "patch"
 
 jobs:
   release:

@@ -1,18 +1,6 @@
 name: Check New Version
 
-on:
-  workflow_dispatch:
-    inputs:
-      releaseType:
-        description: "version update type"
-        required: true
-        type: string
-        default: "automatic"
-        options:
-          - "automatic"
-          - "major"
-          - "minor"
-          - "patch"
+on: workflow_dispatch
 
 jobs:
   release:
@@ -31,3 +19,4 @@ jobs:
         uses: python-semantic-release/python-semantic-release@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          print: "true"
