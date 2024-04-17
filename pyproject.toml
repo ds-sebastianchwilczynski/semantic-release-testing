@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "sebchw_example_package"
-version = "0.1.1"
+version = "0.1.2"
 authors = [
   { name="Example Author", email="author@example.com" },
 ]
@@ -32,6 +32,7 @@ major_on_zero = false
 allow_zero_version = true
 tag_format = "v{version}"
 version_variables = ["pyproject.toml:version"]
+build_command = "python -m build"
 
 [tool.semantic_release.branches.main]
 match = "(main|master)"

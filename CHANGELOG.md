@@ -2,6 +2,13 @@
 
 
 
+## v0.1.2 (2024-04-17)
+
+### Fix
+
+* fix: make choice again ([`596754f`](https://github.com/ds-sebastianchwilczynski/semantic-release-testing/commit/596754f89929b312af8028229e8716bbb01bb859))
+
+
 ## v0.1.1 (2024-04-17)
 
 ### Fix
