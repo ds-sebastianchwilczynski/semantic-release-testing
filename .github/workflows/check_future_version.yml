@@ -1,17 +1,18 @@
-name: Semantic Release
+name: Check New Version
 
-on: 
-  workflow_dispatch
-  inputs:
-    releaseType:
-      description: "version update type"
-      type: choice
-      default: "automatic"
-      options:
-        - "automatic"
-        - "major"
-        - "minor"
-        - "patch"
+on:
+  workflow_dispatch:
+    inputs:
+      releaseType:
+        description: "version update type"
+        required: true
+        type: string
+        default: "automatic"
+        options:
+          - "automatic"
+          - "major"
+          - "minor"
+          - "patch"
 
 jobs:
   release:
