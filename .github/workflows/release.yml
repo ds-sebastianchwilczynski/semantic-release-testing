@@ -33,11 +33,35 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           force: ${{ github.event.inputs.releaseType }}
-          root_options: "-v --noop"
 
       - name: Python Semantic Release Automatic
         if: ${{ github.event.inputs.releaseType == 'automatic' }}
         uses: python-semantic-release/python-semantic-release@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          root_options: "-v --noop"
+
+      - name: Store the distribution packages
+        uses: actions/upload-artifact@v3
+        with:
+          name: python-package-distributions
+          path: dist/
+
+  pypi-publish:
+    name: Upload release to PyPI
+    runs-on: ubuntu-latest
+    needs:
+      - build
+    environment:
+      name: pypi
+      url: https://pypi.org/p/sebchw_example_package
+    permissions:
+      id-token: write # IMPORTANT: this permission is mandatory for trusted publishing
+    steps:
+      - name: Download all the dists
+        uses: actions/download-artifact@v3
+        with:
+          name: python-package-distributions
+          path: dist/
+
+      - name: Publish package distributions to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
