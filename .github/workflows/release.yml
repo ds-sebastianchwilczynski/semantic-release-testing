@@ -6,7 +6,7 @@ on:
       releaseType:
         description: "version update type"
         required: true
-        type: string
+        type: choice
         default: "automatic"
         options:
           - "automatic"
@@ -27,7 +27,17 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Python Semantic Release
+      - name: Python Semantic Release Manual
+        if: ${{ github.event.inputs.releaseType != 'automatic' }}
         uses: python-semantic-release/python-semantic-release@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          force: ${{ github.event.inputs.releaseType }}
+          root_options: "-v --noop"
+
+      - name: Python Semantic Release Automatic
+        if: ${{ github.event.inputs.releaseType == 'automatic' }}
+        uses: python-semantic-release/python-semantic-release@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          root_options: "-v --noop"
