@@ -2,6 +2,13 @@
 
 
 
+## v0.3.2 (2024-04-18)
+
+### Fix
+
+* fix: chill I&#39;m really not crying ([`668509d`](https://github.com/ds-sebastianchwilczynski/semantic-release-testing/commit/668509de110d5b1294ee609e9e5a319af11f2f05))
+
+
 ## v0.3.1 (2024-04-18)
 
 ### Fix
