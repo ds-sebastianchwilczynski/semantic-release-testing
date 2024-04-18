@@ -2,6 +2,29 @@
 
 
 
+## v0.2.0 (2024-04-18)
+
+### Feature
+
+* feat: add pypi ([`1683c74`](https://github.com/ds-sebastianchwilczynski/semantic-release-testing/commit/1683c7478d420392fbe15c78df4a6f7eba8dc151))
+
+### Fix
+
+* fix: missing build ([`3394bc9`](https://github.com/ds-sebastianchwilczynski/semantic-release-testing/commit/3394bc9e0fc446c16800d7775631dfd5a821320a))
+
+* fix: everything as one job ([`1ba1a8d`](https://github.com/ds-sebastianchwilczynski/semantic-release-testing/commit/1ba1a8dea333b8ddc7f0ffbd1a0cdca6c5d7fa3a))
+
+* fix: typo ([`661a93d`](https://github.com/ds-sebastianchwilczynski/semantic-release-testing/commit/661a93d5d2941ec5fa1fec7854e29e13ff42941c))
+
+* fix: build package installation ([`7548e2e`](https://github.com/ds-sebastianchwilczynski/semantic-release-testing/commit/7548e2eb232ae3af6348d9be74bafc1b4225477c))
+
+### Unknown
+
+* fix package installation ([`45ba174`](https://github.com/ds-sebastianchwilczynski/semantic-release-testing/commit/45ba1749bf134f4823a50c523a1cd854fccfb441))
+
+* fix workflow ([`6d3ebe2`](https://github.com/ds-sebastianchwilczynski/semantic-release-testing/commit/6d3ebe233883bd4605fbe6802ee5284648a363cd))
+
+
 ## v0.1.2 (2024-04-17)
 
 ### Fix
