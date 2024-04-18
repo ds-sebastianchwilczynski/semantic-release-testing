@@ -32,7 +32,7 @@ major_on_zero = false
 allow_zero_version = true
 tag_format = "v{version}"
 version_variables = ["pyproject.toml:version"]
-build_command = "python -m build"
+build_command = "pip install build && python -m build"
 
 [tool.semantic_release.branches.main]
 match = "(main|master)"
