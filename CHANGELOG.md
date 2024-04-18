@@ -2,6 +2,13 @@
 
 
 
+## v0.2.2 (2024-04-18)
+
+### Fix
+
+* fix: Im not crying ([`fc16b68`](https://github.com/ds-sebastianchwilczynski/semantic-release-testing/commit/fc16b68807891a1dd7e0f29cc4f5470b14c3d13d))
+
+
 ## v0.2.1 (2024-04-18)
 
 ### Fix
