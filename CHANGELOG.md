@@ -2,6 +2,17 @@
 
 
 
+## v0.4.0 (2024-04-18)
+
+### Feature
+
+* feat: add version variable ([`49adf8d`](https://github.com/ds-sebastianchwilczynski/semantic-release-testing/commit/49adf8df00a2076c610f1617a493963162062b28))
+
+### Fix
+
+* fix: commas ([`0605c33`](https://github.com/ds-sebastianchwilczynski/semantic-release-testing/commit/0605c336c39f22c5535fa5a008e57ebf6ea85bdb))
+
+
 ## v0.3.2 (2024-04-18)
 
 ### Fix
