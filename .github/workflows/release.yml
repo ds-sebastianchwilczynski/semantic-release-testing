@@ -27,6 +27,8 @@ jobs:
         with:
           fetch-depth: 0
 
+      - run: pip install -r requirements.txt
+
       - name: Python Semantic Release Manual
         if: ${{ github.event.inputs.releaseType != 'automatic' }}
         uses: python-semantic-release/python-semantic-release@master
