@@ -2,6 +2,17 @@
 
 
 
+## v0.3.0 (2024-04-18)
+
+### Feature
+
+* feat: add nice print ([`6e3251d`](https://github.com/ds-sebastianchwilczynski/semantic-release-testing/commit/6e3251dab6b00bf31953bec12f355e32369b8be3))
+
+### Unknown
+
+* fir: add id ([`0c9a2c1`](https://github.com/ds-sebastianchwilczynski/semantic-release-testing/commit/0c9a2c119ee8503ba90f377e84454f6dcf092021))
+
+
 ## v0.2.2 (2024-04-18)
 
 ### Fix
