@@ -2,6 +2,13 @@
 
 
 
+## v0.2.1 (2024-04-18)
+
+### Fix
+
+* fix: if statement ([`eaa236d`](https://github.com/ds-sebastianchwilczynski/semantic-release-testing/commit/eaa236da0d6c957e5c292665d049f9f3855e0b51))
+
+
 ## v0.2.0 (2024-04-18)
 
 ### Feature
