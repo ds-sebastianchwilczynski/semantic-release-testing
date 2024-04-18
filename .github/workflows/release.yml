@@ -31,14 +31,16 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: releaseManual
+      - name: Python Semantic Release Manual
+        id: release_manual
         if: ${{ github.event.inputs.releaseType != 'automatic' }}
         uses: python-semantic-release/python-semantic-release@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           force: ${{ github.event.inputs.releaseType }}
 
-      - name: releaseAutomatic
+      - name: Python Semantic Release Automatic
+        id: release_automatic
         if: ${{ github.event.inputs.releaseType == 'automatic' }}
         uses: python-semantic-release/python-semantic-release@master
         with:
@@ -47,4 +49,4 @@ jobs:
       - name: Publish package distributions to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
 
-        if: ${{steps.releaseAutomatic.outputs.released}} == 'true' || ${{steps.releaseManual.outputs.released}} == 'true'
+        if: steps.release_manual.outputs.released == 'true' || steps.release_manual.outputs.automatic == 'true'
