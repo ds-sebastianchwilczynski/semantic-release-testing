@@ -2,6 +2,13 @@
 
 
 
+## v0.5.1 (2024-04-25)
+
+### Fix
+
+* fix: setup ([`5d2f761`](https://github.com/ds-sebastianchwilczynski/semantic-release-testing/commit/5d2f761fc61c459e7bcc75b9961d66eeea5cd62d))
+
+
 ## v0.5.0 (2024-04-25)
 
 ### Feature
