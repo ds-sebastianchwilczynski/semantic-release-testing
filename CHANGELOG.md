@@ -2,6 +2,13 @@
 
 
 
+## v0.5.0 (2024-04-25)
+
+### Feature
+
+* feat: add setup.cfg ([`f3fcb51`](https://github.com/ds-sebastianchwilczynski/semantic-release-testing/commit/f3fcb5179aacfa877edb1eb383ae11fd44bb8fd9))
+
+
 ## v0.4.0 (2024-04-18)
 
 ### Feature
