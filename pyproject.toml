@@ -34,6 +34,7 @@ tag_format = "v{version}"
 version_variables = [
     "pyproject.toml:version",
     "src/sebchw_example_package/__version__.py:__version__",
+    "setup.cfg:version"
 ]
 build_command = "pip install build && python -m build"
 
